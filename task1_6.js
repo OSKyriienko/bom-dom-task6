@@ -1,13 +1,7 @@
 
 
 document.getElementById('player').style.top = '50px';
-  document.getElementById('player').style.left = '50px';
-
-/*var input = document.querySelector('input[name=input]');
-input.addEventListener('keyup', function(e) {
-  console.log(e.keyCode);
-})
-*/
+document.getElementById('player').style.left = '50px';
 
 document.body.onkeydown = function (e) {
 	var el = document.getElementById('player');  
@@ -37,7 +31,6 @@ document.body.onkeydown = function (e) {
   
   else if (e.keyCode == KEYCODE_SPACE) {
       var rocket = document.createElement('div');
-      //document.body.appendChild(fire);
       rocket.classList.add('fire');
       rocket.style.position = 'absolute';
       rocket.style.top = parseInt(el.style.top) - 20 + 'px';
